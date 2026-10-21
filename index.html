@@ -1,0 +1,114 @@
+<!doctype html>
+<html lang="it">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="theme-color" content="oklch(1 0 0)">
+    <meta name="description" content="Un corso interattivo di inglese B1–B2: dialoghi, voiceover, comprensione e risposte in inglese, una lezione alla volta.">
+    <title>Say It Back — Inglese, capito e parlato</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="app.js" defer></script>
+  </head>
+  <body>
+    <a class="skip-link" href="#contenuto">Vai al contenuto</a>
+    <header class="topbar">
+      <a class="brand" href="#inizio" aria-label="Say It Back, pagina iniziale">
+        <span class="brand-mark" aria-hidden="true"><span></span><span></span><span></span></span>
+        <span>say it <strong>back</strong></span>
+      </a>
+      <nav class="top-nav" aria-label="Navigazione principale">
+        <a href="#metodo">Come funziona</a>
+        <a href="#percorso">Il corso</a>
+      </nav>
+      <a class="top-cta" href="#percorso">Comincia <span aria-hidden="true">↗</span></a>
+    </header>
+
+    <main id="contenuto">
+      <section class="hero" id="inizio" aria-labelledby="hero-title">
+        <div class="hero-copy">
+          <p class="eyebrow"><span class="eyebrow-dot" aria-hidden="true"></span> Il corso che ti fa ascoltare davvero</p>
+          <h1 id="hero-title">Capisci l’inglese.<br><span>Poi rispondi.</span></h1>
+          <p class="hero-text">Leggi dialoghi, ascolta storie brevi e metti alla prova quello che hai capito. Un passo alla volta, in inglese.</p>
+          <div class="hero-actions">
+            <a class="button button-primary" href="#percorso">Inizia dalla lezione 1 <span aria-hidden="true">→</span></a>
+            <a class="text-link" href="#metodo">Scopri il metodo <span aria-hidden="true">↓</span></a>
+          </div>
+          <ul class="hero-facts" aria-label="Dettagli del corso">
+            <li><strong>B1–B2</strong><span>livello intermedio</span></li>
+            <li><strong>8</strong><span>lezioni pratiche</span></li>
+            <li><strong>18′</strong><span>per ogni lezione</span></li>
+          </ul>
+        </div>
+        <div class="hero-art" aria-label="Illustrazione di una conversazione e un ascolto">
+          <div class="art-sticker sticker-top"><span class="sticker-dot" aria-hidden="true">✳</span> YOUR ENGLISH, IN ACTION</div>
+          <div class="art-orbit orbit-one" aria-hidden="true"></div>
+          <div class="art-orbit orbit-two" aria-hidden="true"></div>
+          <div class="art-card card-dialogue">
+            <span class="mini-label">A QUICK CHAT</span>
+            <p>“Could you say that <em>again</em>?”</p>
+            <div class="chat-dots" aria-hidden="true"><i></i><i></i><i></i></div>
+          </div>
+          <div class="art-card card-audio">
+            <span class="audio-icon" aria-hidden="true">♫</span>
+            <div><span class="mini-label">LISTEN CLOSELY</span><div class="waveform" aria-hidden="true"><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i></div></div>
+            <span class="audio-time">0:18</span>
+          </div>
+          <div class="art-speech" aria-hidden="true">Hello!<span>↗</span></div>
+          <div class="art-sticker sticker-bottom">READ <b>·</b> LISTEN <b>·</b> REPLY</div>
+        </div>
+      </section>
+
+      <section class="method" id="metodo" aria-labelledby="method-title">
+        <div class="method-heading">
+          <p class="eyebrow">Il metodo, in tre mosse</p>
+          <h2 id="method-title">Prima capisci.<br><span>Poi prendi la parola.</span></h2>
+        </div>
+        <div class="method-steps">
+          <article class="method-step">
+            <span class="step-number">01</span>
+            <div><h3>Segui il dialogo</h3><p>Situazioni vere, inglese naturale e parole che puoi riusare subito.</p></div>
+          </article>
+          <article class="method-step">
+            <span class="step-number">02</span>
+            <div><h3>Ascolta la storia</h3><p>Un voiceover breve. Concentrati sul senso, poi controlla la trascrizione.</p></div>
+          </article>
+          <article class="method-step">
+            <span class="step-number">03</span>
+            <div><h3>Rispondi in inglese</h3><p>Domande di comprensione e spunti per dire la tua, senza paura di sbagliare.</p></div>
+          </article>
+        </div>
+      </section>
+
+      <section class="course-section" id="percorso" aria-labelledby="course-title">
+        <div class="course-heading">
+          <div>
+            <p class="eyebrow">Il tuo prossimo passo</p>
+            <h2 id="course-title">Un corso, <span>otto storie.</span></h2>
+          </div>
+          <p class="course-intro">Scegli una lezione e mettiti alla prova. Puoi seguire il percorso in ordine o saltare direttamente all’argomento che ti incuriosisce.</p>
+        </div>
+        <div class="course-app" id="lesson-app">
+          <aside class="course-rail" aria-label="Elenco delle lezioni">
+            <div class="rail-heading">
+              <div><p class="rail-kicker">ENGLISH IN CONTEXT</p><h3>Il tuo percorso</h3></div>
+              <span class="course-level">B1–B2</span>
+            </div>
+            <div class="progress-copy"><span>Progresso</span><strong id="progress-label">0 di 8</strong></div>
+            <progress class="course-progress" id="course-progress" value="0" max="8" aria-label="Progresso del corso">0 di 8</progress>
+            <ol class="lesson-list" id="lesson-list"></ol>
+            <p class="rail-note"><span aria-hidden="true">✳</span> Una lezione breve è pur sempre un passo avanti.</p>
+          </aside>
+          <section class="lesson-panel" id="lesson-panel" aria-label="Lezione selezionata"></section>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <a class="brand footer-brand" href="#inizio"><span class="brand-mark" aria-hidden="true"><span></span><span></span><span></span></span><span>say it <strong>back</strong></span></a>
+      <p>Made for the moment you understand — and say something back.</p>
+      <a href="#inizio">Torna su ↑</a>
+    </footer>
+    <div class="sr-only" id="polite-status" aria-live="polite"></div>
+  </body>
+</html>
+
